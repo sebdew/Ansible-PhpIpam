@@ -1,0 +1,17 @@
+---
+phpipam:
+  # The name you entered for the app id
+  app_id: phpipamappid
+
+  # API user created 
+  api_user: rest_user
+
+  # API password
+  api_pass: # !vault | 
+            # { vault encrypted hash here }
+  
+  # Change the URL to match your install
+  url:
+    token_request: https://ipam.example.com/api/mlphpipam/user/
+    available_ip: https://ipam.example.com/api/mlphpipam/addresses/first_free/ 
+    register_ip: https://ipam.example.com/api/mlphpipam/addresses/
